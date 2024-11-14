@@ -1,0 +1,14 @@
+.btn {
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  background: var(--clr-white);
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.btn.secondary {
+  background: transparent;
+  border-color: var(--clr-white);
+  color: white;
+}

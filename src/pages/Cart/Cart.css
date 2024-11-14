@@ -1,0 +1,143 @@
+.Cart .contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Cart .title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cartItem-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cartItem-holder .items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.no-data {
+  background: var(--clr-gray3);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--clr-gray);
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .cartItem-holder {
+    flex-direction: row;
+  }
+}
+
+/* ! CART ITEM STYLE */
+
+.cartItem {
+  background: var(--clr-gray3);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--clr-gray2);
+  /* justify-content: ; */
+}
+
+.cartItem .img-holder {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cartItem .other {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItem .name {
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.cartItem .name:hover {
+  color: var(--clr-black);
+}
+
+.cartItem .other .price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItem .qty-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.cartItem .qty-container button {
+  border: none;
+  outline: none;
+  border: 1px solid var(--clr-gray);
+  width: 25px;
+  height: 25px;
+  color: var(--clr-gray2);
+}
+
+@media screen and (min-width: 578px) {
+  .cartItem .other {
+    /* display: flex; */
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .cartItem .other .price-container {
+    gap: 1rem;
+  }
+}
+
+/* ! AMOUNT COMPONENT STYLE */
+
+.Amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--clr-black);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.Amount .total span {
+  color: var(--clr-gray);
+  font-size: 0.7rem;
+}
+
+.Amount .total .price {
+  font-weight: bold;
+}
+
+.cartItem-holder .btn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px) {
+  .cartItem-holder {
+    /* border: 2px solid red; */
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .Amount {
+    width: 420px;
+  }
+}

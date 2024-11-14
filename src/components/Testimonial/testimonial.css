@@ -1,0 +1,95 @@
+.testimonial-container {
+  padding: 8rem 0;
+  overflow: hidden;
+  /* border: 1px solid; */
+}
+.testimonial-container > h1 {
+  text-align: center;
+}
+.testimonial-item {
+  max-width: 700px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+.client-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.client-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.client-role {
+  color: #777;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.client-review {
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 6rem;
+}
+
+.client-rating {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.slick-slider .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  color: #ff9800;
+  padding: 0;
+}
+
+.slick-slider .slick-dots li {
+  margin: 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slider .slick-dots button {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.slick-slider .slick-dots button:hover,
+.slick-slider .slick-dots button.slick-active {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+@media screen and (max-width: 440px) {
+  .client-review {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .testimonial-container {
+    padding: 3.3rem 0;
+  }
+}
+@media screen and (max-width: 343px) {
+  .testimonial-container {
+    padding: 2rem 0;
+  }
+}

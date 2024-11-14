@@ -1,0 +1,107 @@
+.about___header {
+  width: 100%;
+}
+.about__header_div {
+  position: relative;
+  height: 20rem;
+  width: 100%;
+}
+.about__header_hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../../assets/about_image_background.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: 0 -60px;
+}
+/* About Content Component Section */
+.about__content {
+  position: relative;
+  width: 80%;
+  top: -4rem;
+  margin: auto;
+  z-index: 999;
+  background-color: #fff;
+  padding: 2rem 0;
+}
+.about__content_header {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.div__about_content_line {
+  height: 0.2rem;
+  width: 3rem;
+  background: #ddd;
+}
+.about__content_header h1 {
+  color: #414040;
+  font-size: 1.6rem;
+}
+.first_about_content_para {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 90%;
+  color: #414040;
+}
+.second_about_content_para {
+  font-size: 0.9rem;
+  text-align: center;
+  width: 90%;
+  color: #414040;
+}
+
+/* About HERO Compnent Section */
+.about__hero {
+  height: 30rem;
+  position: relative;
+  top: -5.5rem;
+}
+.about__hero_backgound {
+  height: 32rem;
+  width: 79%;
+  margin: auto;
+}
+.about__hero_backgroudIMG {
+  background: url("../../assets/rolex-DMC-karachi-1024x539.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.about__hero_backgroundColor {
+  position: relative;
+  width: 100%;
+  background-color: #ddd;
+  height: 9rem;
+  top: -4rem;
+  z-index: -9999;
+}
+
+@media screen and (max-width: 767px) {
+  .about__header_hero {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about__content {
+    width: 95%;
+  }
+  .first_about_content_para {
+    width: 95%;
+  }
+  .second_about_content_para {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__hero_backgound {
+    width: 100%;
+  }
+}

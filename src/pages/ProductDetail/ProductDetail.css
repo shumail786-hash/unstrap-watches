@@ -1,0 +1,131 @@
+.productDetail .contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ! PRODUCT'S IMG HOLDER STYLE */
+
+.imgHolder {
+  width: 100%;
+  position: relative;
+}
+
+.imgHolder-img-container {
+  position: relative;
+  height: 300px;
+}
+
+.imgsPlaceholder {
+  width: 50px;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  /* background: var(--clr-white); */
+  gap: 0.3rem;
+}
+
+.imgsPlaceholder > div {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s;
+  height: 40px;
+  border: 2px solid var(--clr-gray);
+}
+
+.imgsPlaceholder > div:hover {
+  opacity: 1;
+}
+
+.imgsPlaceholder > .placeholder-active {
+  opacity: 1;
+}
+
+/* ! PRODUCT DETAIL STYLE */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details .title {
+  font-weight: 500;
+}
+
+.details .price {
+  font-weight: 400;
+}
+
+.details .desc {
+  color: var(--clr-gray2);
+  font-size: 0.8rem;
+}
+
+.details .quantity-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details .quantity-container > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.details .quantity-container > p {
+  color: var(--clr-gray2);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.details .quantity-container {
+  margin: 1rem 0;
+}
+
+.details .quantity-container > div > button {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid var(--clr-gray2);
+  color: var(--clr-gray2);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.details .quantity-container > div > button:hover {
+  background: var(--clr-gray2);
+  color: var(--clr-white);
+}
+
+.details .button > .btn {
+  width: 100%;
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+
+/* ?****************************MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+  .productDetail .contentWrapper {
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .details {
+    width: 80%;
+    margin: 0 2rem;
+  }
+
+  .imgHolder-img-container {
+    height: 400px;
+  }
+}

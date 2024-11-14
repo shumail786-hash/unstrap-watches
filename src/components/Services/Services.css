@@ -1,0 +1,16 @@
+.services .contentWrapper {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services .contentWrapper p {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
